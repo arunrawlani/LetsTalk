@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1737E371EF47F2A00B03B77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1737E361EF47F2A00B03B77 /* AppDelegate.swift */; };
+		F1737E391EF47F2A00B03B77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1737E381EF47F2A00B03B77 /* ViewController.swift */; };
+		F1737E3C1EF47F2A00B03B77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1737E3A1EF47F2A00B03B77 /* Main.storyboard */; };
+		F1737E3E1EF47F2A00B03B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1737E3D1EF47F2A00B03B77 /* Assets.xcassets */; };
+		F1737E411EF47F2A00B03B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1737E3F1EF47F2A00B03B77 /* LaunchScreen.storyboard */; };
+		F1737E4C1EF47F2A00B03B77 /* LetsTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1737E4B1EF47F2A00B03B77 /* LetsTalkTests.swift */; };
+		F1737E571EF47F2A00B03B77 /* LetsTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1737E561EF47F2A00B03B77 /* LetsTalkUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1737E481EF47F2A00B03B77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1737E2B1EF47F2A00B03B77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1737E321EF47F2A00B03B77;
+			remoteInfo = LetsTalk;
+		};
+		F1737E531EF47F2A00B03B77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1737E2B1EF47F2A00B03B77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1737E321EF47F2A00B03B77;
+			remoteInfo = LetsTalk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F1737E331EF47F2A00B03B77 /* LetsTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1737E361EF47F2A00B03B77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1737E381EF47F2A00B03B77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1737E3B1EF47F2A00B03B77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1737E3D1EF47F2A00B03B77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1737E401EF47F2A00B03B77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1737E421EF47F2A00B03B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1737E471EF47F2A00B03B77 /* LetsTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1737E4B1EF47F2A00B03B77 /* LetsTalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsTalkTests.swift; sourceTree = "<group>"; };
+		F1737E4D1EF47F2A00B03B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1737E521EF47F2A00B03B77 /* LetsTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsTalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1737E561EF47F2A00B03B77 /* LetsTalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsTalkUITests.swift; sourceTree = "<group>"; };
+		F1737E581EF47F2A00B03B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1737E301EF47F2A00B03B77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1737E441EF47F2A00B03B77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1737E4F1EF47F2A00B03B77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1737E2A1EF47F2A00B03B77 = {
+			isa = PBXGroup;
+			children = (
+				F1737E351EF47F2A00B03B77 /* LetsTalk */,
+				F1737E4A1EF47F2A00B03B77 /* LetsTalkTests */,
+				F1737E551EF47F2A00B03B77 /* LetsTalkUITests */,
+				F1737E341EF47F2A00B03B77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1737E341EF47F2A00B03B77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1737E331EF47F2A00B03B77 /* LetsTalk.app */,
+				F1737E471EF47F2A00B03B77 /* LetsTalkTests.xctest */,
+				F1737E521EF47F2A00B03B77 /* LetsTalkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1737E351EF47F2A00B03B77 /* LetsTalk */ = {
+			isa = PBXGroup;
+			children = (
+				F1737E361EF47F2A00B03B77 /* AppDelegate.swift */,
+				F1737E381EF47F2A00B03B77 /* ViewController.swift */,
+				F1737E3A1EF47F2A00B03B77 /* Main.storyboard */,
+				F1737E3D1EF47F2A00B03B77 /* Assets.xcassets */,
+				F1737E3F1EF47F2A00B03B77 /* LaunchScreen.storyboard */,
+				F1737E421EF47F2A00B03B77 /* Info.plist */,
+			);
+			path = LetsTalk;
+			sourceTree = "<group>";
+		};
+		F1737E4A1EF47F2A00B03B77 /* LetsTalkTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1737E4B1EF47F2A00B03B77 /* LetsTalkTests.swift */,
+				F1737E4D1EF47F2A00B03B77 /* Info.plist */,
+			);
+			path = LetsTalkTests;
+			sourceTree = "<group>";
+		};
+		F1737E551EF47F2A00B03B77 /* LetsTalkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1737E561EF47F2A00B03B77 /* LetsTalkUITests.swift */,
+				F1737E581EF47F2A00B03B77 /* Info.plist */,
+			);
+			path = LetsTalkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1737E321EF47F2A00B03B77 /* LetsTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1737E5B1EF47F2A00B03B77 /* Build configuration list for PBXNativeTarget "LetsTalk" */;
+			buildPhases = (
+				F1737E2F1EF47F2A00B03B77 /* Sources */,
+				F1737E301EF47F2A00B03B77 /* Frameworks */,
+				F1737E311EF47F2A00B03B77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LetsTalk;
+			productName = LetsTalk;
+			productReference = F1737E331EF47F2A00B03B77 /* LetsTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1737E461EF47F2A00B03B77 /* LetsTalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1737E5E1EF47F2A00B03B77 /* Build configuration list for PBXNativeTarget "LetsTalkTests" */;
+			buildPhases = (
+				F1737E431EF47F2A00B03B77 /* Sources */,
+				F1737E441EF47F2A00B03B77 /* Frameworks */,
+				F1737E451EF47F2A00B03B77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1737E491EF47F2A00B03B77 /* PBXTargetDependency */,
+			);
+			name = LetsTalkTests;
+			productName = LetsTalkTests;
+			productReference = F1737E471EF47F2A00B03B77 /* LetsTalkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1737E511EF47F2A00B03B77 /* LetsTalkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1737E611EF47F2A00B03B77 /* Build configuration list for PBXNativeTarget "LetsTalkUITests" */;
+			buildPhases = (
+				F1737E4E1EF47F2A00B03B77 /* Sources */,
+				F1737E4F1EF47F2A00B03B77 /* Frameworks */,
+				F1737E501EF47F2A00B03B77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1737E541EF47F2A00B03B77 /* PBXTargetDependency */,
+			);
+			name = LetsTalkUITests;
+			productName = LetsTalkUITests;
+			productReference = F1737E521EF47F2A00B03B77 /* LetsTalkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1737E2B1EF47F2A00B03B77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Arun Rawlani";
+				TargetAttributes = {
+					F1737E321EF47F2A00B03B77 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					F1737E461EF47F2A00B03B77 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F1737E321EF47F2A00B03B77;
+					};
+					F1737E511EF47F2A00B03B77 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F1737E321EF47F2A00B03B77;
+					};
+				};
+			};
+			buildConfigurationList = F1737E2E1EF47F2A00B03B77 /* Build configuration list for PBXProject "LetsTalk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1737E2A1EF47F2A00B03B77;
+			productRefGroup = F1737E341EF47F2A00B03B77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1737E321EF47F2A00B03B77 /* LetsTalk */,
+				F1737E461EF47F2A00B03B77 /* LetsTalkTests */,
+				F1737E511EF47F2A00B03B77 /* LetsTalkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1737E311EF47F2A00B03B77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1737E411EF47F2A00B03B77 /* LaunchScreen.storyboard in Resources */,
+				F1737E3E1EF47F2A00B03B77 /* Assets.xcassets in Resources */,
+				F1737E3C1EF47F2A00B03B77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1737E451EF47F2A00B03B77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1737E501EF47F2A00B03B77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1737E2F1EF47F2A00B03B77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1737E391EF47F2A00B03B77 /* ViewController.swift in Sources */,
+				F1737E371EF47F2A00B03B77 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1737E431EF47F2A00B03B77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1737E4C1EF47F2A00B03B77 /* LetsTalkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1737E4E1EF47F2A00B03B77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1737E571EF47F2A00B03B77 /* LetsTalkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1737E491EF47F2A00B03B77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1737E321EF47F2A00B03B77 /* LetsTalk */;
+			targetProxy = F1737E481EF47F2A00B03B77 /* PBXContainerItemProxy */;
+		};
+		F1737E541EF47F2A00B03B77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1737E321EF47F2A00B03B77 /* LetsTalk */;
+			targetProxy = F1737E531EF47F2A00B03B77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1737E3A1EF47F2A00B03B77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1737E3B1EF47F2A00B03B77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1737E3F1EF47F2A00B03B77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1737E401EF47F2A00B03B77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1737E591EF47F2A00B03B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1737E5A1EF47F2A00B03B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1737E5C1EF47F2A00B03B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LetsTalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arun.LetsTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F1737E5D1EF47F2A00B03B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LetsTalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arun.LetsTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F1737E5F1EF47F2A00B03B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LetsTalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arun.LetsTalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetsTalk.app/LetsTalk";
+			};
+			name = Debug;
+		};
+		F1737E601EF47F2A00B03B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LetsTalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arun.LetsTalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetsTalk.app/LetsTalk";
+			};
+			name = Release;
+		};
+		F1737E621EF47F2A00B03B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = LetsTalkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arun.LetsTalkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LetsTalk;
+			};
+			name = Debug;
+		};
+		F1737E631EF47F2A00B03B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = LetsTalkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arun.LetsTalkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LetsTalk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1737E2E1EF47F2A00B03B77 /* Build configuration list for PBXProject "LetsTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1737E591EF47F2A00B03B77 /* Debug */,
+				F1737E5A1EF47F2A00B03B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1737E5B1EF47F2A00B03B77 /* Build configuration list for PBXNativeTarget "LetsTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1737E5C1EF47F2A00B03B77 /* Debug */,
+				F1737E5D1EF47F2A00B03B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F1737E5E1EF47F2A00B03B77 /* Build configuration list for PBXNativeTarget "LetsTalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1737E5F1EF47F2A00B03B77 /* Debug */,
+				F1737E601EF47F2A00B03B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F1737E611EF47F2A00B03B77 /* Build configuration list for PBXNativeTarget "LetsTalkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1737E621EF47F2A00B03B77 /* Debug */,
+				F1737E631EF47F2A00B03B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1737E2B1EF47F2A00B03B77 /* Project object */;
+}
