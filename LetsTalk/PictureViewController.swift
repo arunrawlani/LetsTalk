@@ -8,21 +8,32 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 class PictureViewController: UIViewController{
     var names: [UIImage] = [
         UIImage(named: "1")!,
         UIImage(named: "2")!,
-        UIImage(named: "1")!,
-        UIImage(named: "2")!
+        UIImage(named: "3")!,
+        UIImage(named: "4")!,
+        UIImage(named: "5")!,
+        UIImage(named: "6")!,
+        UIImage(named: "7")!,
+        UIImage(named: "8")!,
+        UIImage(named: "9")!,
+        UIImage(named: "10")!,
+        UIImage(named: "11")!,
+        UIImage(named: "12")!
     ]
     @IBOutlet weak var pictureBox: UIImageView!
     @IBOutlet weak var changeButton: UIButton!
-    
-    var pictureCount = 0;
+    var recordButton: UIButton!
+    var recordingSession: AVAudioSession!
+    var audioRecorder: AVAudioRecorder!
+    var pictureCount = 0
     
     override func viewDidLoad() {
-        pictureCount = 0;
+        pictureCount = 0
     }
     
     
