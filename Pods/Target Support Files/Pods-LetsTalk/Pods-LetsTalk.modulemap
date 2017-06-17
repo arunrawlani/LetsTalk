@@ -1,0 +1,6 @@
+framework module Pods_LetsTalk {
+  umbrella header "Pods-LetsTalk-umbrella.h"
+
+  export *
+  module * { export * }
+}

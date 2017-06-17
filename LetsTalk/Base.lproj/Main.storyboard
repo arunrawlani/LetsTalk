@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JtB-SR-3eY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="etB-Jt-Ea8">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -499,20 +499,40 @@
                                     <constraint firstAttribute="height" constant="227" id="rm4-BK-0jv"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBA-C6-nhz">
+                                <rect key="frame" x="50" y="616" width="314" height="30"/>
+                                <state key="normal" title="Tap To Record"/>
+                                <connections>
+                                    <action selector="recordButtonPressed:" destination="JtB-SR-3eY" eventType="touchUpInside" id="EcF-Nh-RBQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJv-5U-2pc">
+                                <rect key="frame" x="65" y="578" width="284" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playPressed:" destination="JtB-SR-3eY" eventType="touchUpInside" id="UEB-FG-WgA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wwV-PC-Nmo" firstAttribute="leading" secondItem="lYs-bl-0OI" secondAttribute="leadingMargin" constant="10" id="1m5-dh-lCz"/>
                             <constraint firstItem="wwV-PC-Nmo" firstAttribute="top" secondItem="aEY-yf-X0Z" secondAttribute="bottom" constant="19" id="7MT-Qf-IhM"/>
                             <constraint firstItem="2o1-6A-YDC" firstAttribute="leading" secondItem="lYs-bl-0OI" secondAttribute="leading" id="7PX-dS-UDE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cBA-C6-nhz" secondAttribute="trailing" constant="30" id="9zn-uE-goh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dJv-5U-2pc" secondAttribute="trailing" constant="45" id="JUw-0f-N1x"/>
                             <constraint firstItem="aEY-yf-X0Z" firstAttribute="leading" secondItem="lYs-bl-0OI" secondAttribute="leadingMargin" constant="93" id="K92-kZ-M14"/>
                             <constraint firstItem="2o1-6A-YDC" firstAttribute="top" secondItem="lYs-bl-0OI" secondAttribute="top" id="KEm-gS-Esu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aEY-yf-X0Z" secondAttribute="trailing" constant="94" id="M4g-uT-Dbc"/>
+                            <constraint firstItem="cBA-C6-nhz" firstAttribute="leading" secondItem="lYs-bl-0OI" secondAttribute="leadingMargin" constant="30" id="Nkz-f2-cE9"/>
+                            <constraint firstItem="dJv-5U-2pc" firstAttribute="leading" secondItem="lYs-bl-0OI" secondAttribute="leadingMargin" constant="45" id="QMI-Hq-czc"/>
                             <constraint firstItem="wwV-PC-Nmo" firstAttribute="trailing" secondItem="lYs-bl-0OI" secondAttribute="trailingMargin" id="Tf2-va-emH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8C5-zf-rza" secondAttribute="trailing" constant="20" id="XYg-MU-p4L"/>
                             <constraint firstAttribute="trailing" secondItem="2o1-6A-YDC" secondAttribute="trailing" id="Zkb-Yu-JBd"/>
+                            <constraint firstItem="8C5-zf-rza" firstAttribute="top" secondItem="cBA-C6-nhz" secondAttribute="bottom" constant="17" id="b9A-ph-c3T"/>
                             <constraint firstItem="X1j-Rr-Vhd" firstAttribute="top" secondItem="8C5-zf-rza" secondAttribute="bottom" constant="43" id="dnl-50-tfu"/>
                             <constraint firstItem="8C5-zf-rza" firstAttribute="leading" secondItem="lYs-bl-0OI" secondAttribute="leadingMargin" constant="20" id="l22-PN-XJE"/>
+                            <constraint firstItem="cBA-C6-nhz" firstAttribute="top" secondItem="dJv-5U-2pc" secondAttribute="bottom" constant="8" id="oeH-gv-WAM"/>
                             <constraint firstItem="X1j-Rr-Vhd" firstAttribute="top" secondItem="2o1-6A-YDC" secondAttribute="bottom" id="s6W-Yg-UbE"/>
                             <constraint firstItem="aEY-yf-X0Z" firstAttribute="top" secondItem="9I7-X6-Tgl" secondAttribute="bottom" constant="42" id="vrY-ow-dum"/>
                         </constraints>
@@ -520,6 +540,8 @@
                     <connections>
                         <outlet property="changeButton" destination="8C5-zf-rza" id="0yR-jU-C6C"/>
                         <outlet property="pictureBox" destination="wwV-PC-Nmo" id="zuy-93-Lvd"/>
+                        <outlet property="playButton" destination="dJv-5U-2pc" id="NYO-Zn-IW6"/>
+                        <outlet property="recordButton" destination="cBA-C6-nhz" id="MMD-7I-to1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wuW-GQ-Y86" userLabel="First Responder" sceneMemberID="firstResponder"/>
