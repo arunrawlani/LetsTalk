@@ -14,6 +14,8 @@
 		F1737E411EF47F2A00B03B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1737E3F1EF47F2A00B03B77 /* LaunchScreen.storyboard */; };
 		F1737E4C1EF47F2A00B03B77 /* LetsTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1737E4B1EF47F2A00B03B77 /* LetsTalkTests.swift */; };
 		F1737E571EF47F2A00B03B77 /* LetsTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1737E561EF47F2A00B03B77 /* LetsTalkUITests.swift */; };
+		F1737E651EF4ABCF00B03B77 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1737E641EF4ABCF00B03B77 /* LoginViewController.swift */; };
+		F184E6941EF5C65700D2825E /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F184E6931EF5C65700D2825E /* PictureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		F1737E521EF47F2A00B03B77 /* LetsTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsTalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1737E561EF47F2A00B03B77 /* LetsTalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsTalkUITests.swift; sourceTree = "<group>"; };
 		F1737E581EF47F2A00B03B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1737E641EF4ABCF00B03B77 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F184E6931EF5C65700D2825E /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 			children = (
 				F1737E361EF47F2A00B03B77 /* AppDelegate.swift */,
 				F1737E381EF47F2A00B03B77 /* ViewController.swift */,
+				F1737E641EF4ABCF00B03B77 /* LoginViewController.swift */,
 				F1737E3A1EF47F2A00B03B77 /* Main.storyboard */,
 				F1737E3D1EF47F2A00B03B77 /* Assets.xcassets */,
 				F1737E3F1EF47F2A00B03B77 /* LaunchScreen.storyboard */,
 				F1737E421EF47F2A00B03B77 /* Info.plist */,
+				F184E6931EF5C65700D2825E /* PictureViewController.swift */,
 			);
 			path = LetsTalk;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1737E651EF4ABCF00B03B77 /* LoginViewController.swift in Sources */,
+				F184E6941EF5C65700D2825E /* PictureViewController.swift in Sources */,
 				F1737E391EF47F2A00B03B77 /* ViewController.swift in Sources */,
 				F1737E371EF47F2A00B03B77 /* AppDelegate.swift in Sources */,
 			);
@@ -503,6 +511,7 @@
 				F1737E5D1EF47F2A00B03B77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1737E5E1EF47F2A00B03B77 /* Build configuration list for PBXNativeTarget "LetsTalkTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +520,7 @@
 				F1737E601EF47F2A00B03B77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1737E611EF47F2A00B03B77 /* Build configuration list for PBXNativeTarget "LetsTalkUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +529,7 @@
 				F1737E631EF47F2A00B03B77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
