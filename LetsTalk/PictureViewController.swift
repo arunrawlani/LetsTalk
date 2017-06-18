@@ -37,8 +37,14 @@ class PictureViewController: UIViewController, AVAudioRecorderDelegate, AVAudioP
     var audioFilename: URL!
     var pictureCount = 0
     
+    //will appear when recording
+    @IBOutlet weak var rIndi: UIActivityIndicatorView!
+    @IBOutlet weak var rLabel: UILabel!
+    
     override func viewDidLoad() {
         pictureCount = 0
+        rIndi.isHidden = true
+        rLabel.isHidden = true
         changeButton.isHidden = true;
         playButton.isHidden = true;
         recordingSession = AVAudioSession.sharedInstance()
@@ -95,10 +101,17 @@ class PictureViewController: UIViewController, AVAudioRecorderDelegate, AVAudioP
     func recordTapped() {
         if audioRecorder == nil {
             startRecording()
+            rIndi.isHidden = false
+            rIndi.startAnimating()
+            rLabel.isHidden = false
         } else {
             finishRecording(success: true)
             //playButton.isHidden = false
             changeButton.isHidden = false;
+            rIndi.stopAnimating()
+            rIndi.isHidden = true
+            rLabel.isHidden = true
+            
             
             //sending the recording to the backend
             Alamofire.upload(
