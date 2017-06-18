@@ -40,7 +40,7 @@ class PictureViewController: UIViewController, AVAudioRecorderDelegate, AVAudioP
     override func viewDidLoad() {
         pictureCount = 0
         changeButton.isHidden = true;
-        
+        playButton.isHidden = true;
         recordingSession = AVAudioSession.sharedInstance()
         do {
             try recordingSession.setCategory(AVAudioSessionCategoryPlayAndRecord, with:.defaultToSpeaker)
@@ -60,7 +60,6 @@ class PictureViewController: UIViewController, AVAudioRecorderDelegate, AVAudioP
     }
     
     @IBAction func recordButtonPressed(_ sender: Any) {
-        playButton.isEnabled = false
         recordTapped()
     }
 
@@ -79,7 +78,11 @@ class PictureViewController: UIViewController, AVAudioRecorderDelegate, AVAudioP
     @IBAction func nextPicture(_ sender: Any) {
         
         //changes picture in the box
+        playButton.isHidden = true;
         changeButton.isHidden = true;
+        
+        recordButton.isHidden = false;
+        recordButton.setTitle("Tap to Record", for: .normal)
         pictureCount += 1
         if (pictureCount >= names.count){
             pictureCount = 0
@@ -94,7 +97,7 @@ class PictureViewController: UIViewController, AVAudioRecorderDelegate, AVAudioP
             startRecording()
         } else {
             finishRecording(success: true)
-            playButton.isHidden = false
+            //playButton.isHidden = false
             changeButton.isHidden = false;
             
             //sending the recording to the backend
