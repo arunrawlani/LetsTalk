@@ -17,6 +17,8 @@
 		F1737E571EF47F2A00B03B77 /* LetsTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1737E561EF47F2A00B03B77 /* LetsTalkUITests.swift */; };
 		F1737E651EF4ABCF00B03B77 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1737E641EF4ABCF00B03B77 /* LoginViewController.swift */; };
 		F184E6941EF5C65700D2825E /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F184E6931EF5C65700D2825E /* PictureViewController.swift */; };
+		F188F4A01EF62F65007DC20B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188F49F1EF62F65007DC20B /* WelcomeViewController.swift */; };
+		F188F4A21EF630A3007DC20B /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = F188F4A11EF630A3007DC20B /* giphy.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		F1737E581EF47F2A00B03B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1737E641EF4ABCF00B03B77 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F184E6931EF5C65700D2825E /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		F188F49F1EF62F65007DC20B /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F188F4A11EF630A3007DC20B /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 		F1737E351EF47F2A00B03B77 /* LetsTalk */ = {
 			isa = PBXGroup;
 			children = (
+				F188F4A11EF630A3007DC20B /* giphy.gif */,
 				F1737E361EF47F2A00B03B77 /* AppDelegate.swift */,
 				F1737E381EF47F2A00B03B77 /* ViewController.swift */,
 				F1737E641EF4ABCF00B03B77 /* LoginViewController.swift */,
@@ -133,6 +138,7 @@
 				F1737E3F1EF47F2A00B03B77 /* LaunchScreen.storyboard */,
 				F1737E421EF47F2A00B03B77 /* Info.plist */,
 				F184E6931EF5C65700D2825E /* PictureViewController.swift */,
+				F188F49F1EF62F65007DC20B /* WelcomeViewController.swift */,
 			);
 			path = LetsTalk;
 			sourceTree = "<group>";
@@ -268,6 +274,7 @@
 			files = (
 				F1737E411EF47F2A00B03B77 /* LaunchScreen.storyboard in Resources */,
 				F1737E3E1EF47F2A00B03B77 /* Assets.xcassets in Resources */,
+				F188F4A21EF630A3007DC20B /* giphy.gif in Resources */,
 				F1737E3C1EF47F2A00B03B77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1737E651EF4ABCF00B03B77 /* LoginViewController.swift in Sources */,
+				F188F4A01EF62F65007DC20B /* WelcomeViewController.swift in Sources */,
 				F184E6941EF5C65700D2825E /* PictureViewController.swift in Sources */,
 				F1737E391EF47F2A00B03B77 /* ViewController.swift in Sources */,
 				F1737E371EF47F2A00B03B77 /* AppDelegate.swift in Sources */,
