@@ -65,12 +65,11 @@ class ResultsViewController: UIViewController{
             self.probLabel.text = " "
             
             self.delay(seconds: 2.0, completion: {
-                //SwiftSpinner.show("Aggregating scores for\n pictures...")
+                self.timeLabel.text = self.durationString
+                self.pauseLabel.text = self.pauseString
+                self.probLabel.text = self.scoreString
             })
-            
-            self.timeLabel.text = self.durationString
-            self.pauseLabel.text = self.pauseString
-            self.probLabel.text = self.scoreString
+
         }
     }
     
