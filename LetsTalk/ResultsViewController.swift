@@ -27,6 +27,14 @@ class ResultsViewController: UIViewController{
         timeLabel.text = "Loading..."
         pauseLabel.text = "Loading..."
         probLabel.text = " "
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.demoSpinner()
+        
         Alamofire.request("http://ec2-13-58-233-169.us-east-2.compute.amazonaws.com:17001/get_results").responseJSON { response in
             print("Request: \(String(describing: response.request))")   // original url request
             print("Response: \(String(describing: response.response))") // http url response
@@ -51,17 +59,19 @@ class ResultsViewController: UIViewController{
             print(self.durationString)
             print(self.pauseString)
             print(self.scoreString)
+            
+            self.timeLabel.text = "Loading..."
+            self.pauseLabel.text = "Loading..."
+            self.probLabel.text = " "
+            
+            self.delay(seconds: 2.0, completion: {
+                //SwiftSpinner.show("Aggregating scores for\n pictures...")
+            })
+            
             self.timeLabel.text = self.durationString
             self.pauseLabel.text = self.pauseString
             self.probLabel.text = self.scoreString
         }
-        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        self.demoSpinner()
     }
     
     
@@ -80,8 +90,7 @@ class ResultsViewController: UIViewController{
             SwiftSpinner.show("Analyzing the \n recordings")
         })
         
-        delay(seconds: 9.0, completion: {
-            SwiftSpinner.sharedInstance.outerColor = UIColor.red.withAlphaComponent(0.5)
+        delay(seconds: 10.0, completion: {
             SwiftSpinner.show("Running the model", animated: false)
         })
         

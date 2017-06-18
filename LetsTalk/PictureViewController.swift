@@ -84,7 +84,7 @@ class PictureViewController: UIViewController, AVAudioRecorderDelegate, AVAudioP
     }
     
     @IBAction func nextPicture(_ sender: Any) {
-        if(count >= 0){
+        if(count >= 4){
             //SwiftSpinner.show(duration: 3.0, title:"Aggregating score for the images")
             //SwiftSpinner.show(duration: 3.0, title: "Analyzing all recordings")
             //SwiftSpinner.show(duration: 2.0, title: "Running data through SVM")
@@ -123,9 +123,16 @@ class PictureViewController: UIViewController, AVAudioRecorderDelegate, AVAudioP
             
             
             //sending the recording to the backend
+            let myRandom = arc4random_uniform(UInt32(100))
+            let session_data = String(myRandom).data(using: .utf8)
+            let image_data = String(count+1).data(using: .utf8)
+            
             Alamofire.upload(
                 multipartFormData: { multipartFormData in
                     multipartFormData.append(self.previousAudioRecorder.url, withName: "file")
+                    multipartFormData.append(session_data!, withName: "session_id")
+                    multipartFormData.append(image_data!, withName: "image_number")
+                    
             },
                 to: "http://ec2-13-58-233-169.us-east-2.compute.amazonaws.com:17001/raw_audio",
                 encodingCompletion: { encodingResult in
