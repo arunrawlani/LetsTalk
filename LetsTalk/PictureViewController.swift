@@ -10,8 +10,10 @@ import Foundation
 import UIKit
 import AVFoundation
 import Alamofire
+import SwiftSpinner
 
 class PictureViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate{
+    var count = 0
     var names: [UIImage] = [
         UIImage(named: "1")!,
         UIImage(named: "2")!,
@@ -82,7 +84,14 @@ class PictureViewController: UIViewController, AVAudioRecorderDelegate, AVAudioP
     }
     
     @IBAction func nextPicture(_ sender: Any) {
-        
+        if(count >= 0){
+            //SwiftSpinner.show(duration: 3.0, title:"Aggregating score for the images")
+            //SwiftSpinner.show(duration: 3.0, title: "Analyzing all recordings")
+            //SwiftSpinner.show(duration: 2.0, title: "Running data through SVM")
+
+            performSegue(withIdentifier: "showResults", sender: self)
+        }
+        count+=1
         //changes picture in the box
         playButton.isHidden = true;
         changeButton.isHidden = true;

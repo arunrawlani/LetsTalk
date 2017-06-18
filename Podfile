@@ -5,4 +5,5 @@ target 'LetsTalk' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'SwiftGifOrigin', '~> 1.6.1'
+  pod "SwiftSpinner"	
 end

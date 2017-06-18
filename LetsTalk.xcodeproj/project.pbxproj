@@ -19,6 +19,9 @@
 		F184E6941EF5C65700D2825E /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F184E6931EF5C65700D2825E /* PictureViewController.swift */; };
 		F188F4A01EF62F65007DC20B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188F49F1EF62F65007DC20B /* WelcomeViewController.swift */; };
 		F188F4A21EF630A3007DC20B /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = F188F4A11EF630A3007DC20B /* giphy.gif */; };
+		F188F4A41EF6611A007DC20B /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188F4A31EF6611A007DC20B /* OptionViewController.swift */; };
+		F188F4A61EF6B381007DC20B /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188F4A51EF6B381007DC20B /* ResultsViewController.swift */; };
+		F188F4A81EF6C5B7007DC20B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188F4A71EF6C5B7007DC20B /* Session.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		F184E6931EF5C65700D2825E /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		F188F49F1EF62F65007DC20B /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		F188F4A11EF630A3007DC20B /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
+		F188F4A31EF6611A007DC20B /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
+		F188F4A51EF6B381007DC20B /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		F188F4A71EF6C5B7007DC20B /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,12 +139,15 @@
 				F1737E361EF47F2A00B03B77 /* AppDelegate.swift */,
 				F1737E381EF47F2A00B03B77 /* ViewController.swift */,
 				F1737E641EF4ABCF00B03B77 /* LoginViewController.swift */,
+				F188F4A31EF6611A007DC20B /* OptionViewController.swift */,
+				F188F4A51EF6B381007DC20B /* ResultsViewController.swift */,
 				F1737E3A1EF47F2A00B03B77 /* Main.storyboard */,
 				F1737E3D1EF47F2A00B03B77 /* Assets.xcassets */,
 				F1737E3F1EF47F2A00B03B77 /* LaunchScreen.storyboard */,
 				F1737E421EF47F2A00B03B77 /* Info.plist */,
 				F184E6931EF5C65700D2825E /* PictureViewController.swift */,
 				F188F49F1EF62F65007DC20B /* WelcomeViewController.swift */,
+				F188F4A71EF6C5B7007DC20B /* Session.swift */,
 			);
 			path = LetsTalk;
 			sourceTree = "<group>";
@@ -351,8 +360,11 @@
 				F1737E651EF4ABCF00B03B77 /* LoginViewController.swift in Sources */,
 				F188F4A01EF62F65007DC20B /* WelcomeViewController.swift in Sources */,
 				F184E6941EF5C65700D2825E /* PictureViewController.swift in Sources */,
+				F188F4A61EF6B381007DC20B /* ResultsViewController.swift in Sources */,
+				F188F4A81EF6C5B7007DC20B /* Session.swift in Sources */,
 				F1737E391EF47F2A00B03B77 /* ViewController.swift in Sources */,
 				F1737E371EF47F2A00B03B77 /* AppDelegate.swift in Sources */,
+				F188F4A41EF6611A007DC20B /* OptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

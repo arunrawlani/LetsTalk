@@ -2,20 +2,23 @@ PODS:
   - Alamofire (4.5.0)
   - AudioKit (3.7)
   - SwiftGifOrigin (1.6.1)
+  - SwiftSpinner (1.2.1)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire
   - AudioKit
   - SwiftGifOrigin (~> 1.6.1)
+  - SwiftSpinner
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   AudioKit: 73c43705575e483623bf3cf306f823a8677aebdd
   SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
+  SwiftSpinner: 62a28bbb4035f252a1e91b0e17fc40bdbbfa0aab
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 8f294e7a4dcc4f3781ceaf55080fdd936deacccc
+PODFILE CHECKSUM: aae9390d4045b14b251a7ddb351f4bf6f5948c1f
 
 COCOAPODS: 1.2.1
