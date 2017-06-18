@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import AVFoundation
+import Alamofire
 
 class PictureViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate{
     var names: [UIImage] = [
@@ -27,7 +28,6 @@ class PictureViewController: UIViewController, AVAudioRecorderDelegate, AVAudioP
     ]
     @IBOutlet weak var pictureBox: UIImageView!
     @IBOutlet weak var changeButton: UIButton!
-    
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var recordButton: UIButton!
     var recordingSession: AVAudioSession!
@@ -79,6 +79,7 @@ class PictureViewController: UIViewController, AVAudioRecorderDelegate, AVAudioP
     @IBAction func nextPicture(_ sender: Any) {
         
         //changes picture in the box
+        changeButton.isHidden = true;
         pictureCount += 1
         if (pictureCount >= names.count){
             pictureCount = 0
@@ -93,7 +94,27 @@ class PictureViewController: UIViewController, AVAudioRecorderDelegate, AVAudioP
             startRecording()
         } else {
             finishRecording(success: true)
-            playButton.isEnabled = true
+            playButton.isHidden = false
+            changeButton.isHidden = false;
+            
+            //sending the recording to the backend
+            Alamofire.upload(
+                multipartFormData: { multipartFormData in
+                    multipartFormData.append(self.previousAudioRecorder.url, withName: "file")
+            },
+                to: "http://ec2-13-58-233-169.us-east-2.compute.amazonaws.com:17001/raw_audio",
+                encodingCompletion: { encodingResult in
+                    switch encodingResult {
+                    case .success(let upload, _, _):
+                        upload.responseJSON { response in
+                            debugPrint(response)
+                        }
+                    case .failure(let encodingError):
+                        print(encodingError)
+                    }
+            }
+            )
+            
         }
     }
     
@@ -131,7 +152,8 @@ class PictureViewController: UIViewController, AVAudioRecorderDelegate, AVAudioP
         audioRecorder = nil
         
         if success {
-            recordButton.setTitle("Tap to Re-record", for: .normal)
+            recordButton.isHidden = true;
+            //recordButton.setTitle("Tap to Re-record", for: .normal)
         } else {
             recordButton.setTitle("Tap to Record", for: .normal)
             // recording failed :(

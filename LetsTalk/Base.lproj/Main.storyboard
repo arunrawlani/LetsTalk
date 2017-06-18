@@ -486,8 +486,8 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8C5-zf-rza">
                                 <rect key="frame" x="40" y="663" width="334" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Next Picture">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="nextPicture:" destination="JtB-SR-3eY" eventType="touchUpInside" id="2CS-ti-zPl"/>
@@ -500,14 +500,14 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBA-C6-nhz">
-                                <rect key="frame" x="50" y="616" width="314" height="30"/>
+                                <rect key="frame" x="50" y="664" width="314" height="30"/>
                                 <state key="normal" title="Tap To Record"/>
                                 <connections>
                                     <action selector="recordButtonPressed:" destination="JtB-SR-3eY" eventType="touchUpInside" id="EcF-Nh-RBQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJv-5U-2pc">
-                                <rect key="frame" x="65" y="578" width="284" height="30"/>
+                                <rect key="frame" x="40" y="636" width="334" height="30"/>
                                 <state key="normal" title="Play"/>
                                 <connections>
                                     <action selector="playPressed:" destination="JtB-SR-3eY" eventType="touchUpInside" id="UEB-FG-WgA"/>
@@ -520,19 +520,19 @@
                             <constraint firstItem="wwV-PC-Nmo" firstAttribute="top" secondItem="aEY-yf-X0Z" secondAttribute="bottom" constant="19" id="7MT-Qf-IhM"/>
                             <constraint firstItem="2o1-6A-YDC" firstAttribute="leading" secondItem="lYs-bl-0OI" secondAttribute="leading" id="7PX-dS-UDE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cBA-C6-nhz" secondAttribute="trailing" constant="30" id="9zn-uE-goh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dJv-5U-2pc" secondAttribute="trailing" constant="45" id="JUw-0f-N1x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dJv-5U-2pc" secondAttribute="trailing" constant="20" id="JUw-0f-N1x"/>
                             <constraint firstItem="aEY-yf-X0Z" firstAttribute="leading" secondItem="lYs-bl-0OI" secondAttribute="leadingMargin" constant="93" id="K92-kZ-M14"/>
                             <constraint firstItem="2o1-6A-YDC" firstAttribute="top" secondItem="lYs-bl-0OI" secondAttribute="top" id="KEm-gS-Esu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aEY-yf-X0Z" secondAttribute="trailing" constant="94" id="M4g-uT-Dbc"/>
                             <constraint firstItem="cBA-C6-nhz" firstAttribute="leading" secondItem="lYs-bl-0OI" secondAttribute="leadingMargin" constant="30" id="Nkz-f2-cE9"/>
-                            <constraint firstItem="dJv-5U-2pc" firstAttribute="leading" secondItem="lYs-bl-0OI" secondAttribute="leadingMargin" constant="45" id="QMI-Hq-czc"/>
+                            <constraint firstItem="dJv-5U-2pc" firstAttribute="leading" secondItem="lYs-bl-0OI" secondAttribute="leadingMargin" constant="20" id="QMI-Hq-czc"/>
                             <constraint firstItem="wwV-PC-Nmo" firstAttribute="trailing" secondItem="lYs-bl-0OI" secondAttribute="trailingMargin" id="Tf2-va-emH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8C5-zf-rza" secondAttribute="trailing" constant="20" id="XYg-MU-p4L"/>
                             <constraint firstAttribute="trailing" secondItem="2o1-6A-YDC" secondAttribute="trailing" id="Zkb-Yu-JBd"/>
-                            <constraint firstItem="8C5-zf-rza" firstAttribute="top" secondItem="cBA-C6-nhz" secondAttribute="bottom" constant="17" id="b9A-ph-c3T"/>
+                            <constraint firstItem="8C5-zf-rza" firstAttribute="top" secondItem="cBA-C6-nhz" secondAttribute="bottom" constant="-31" id="b9A-ph-c3T"/>
                             <constraint firstItem="X1j-Rr-Vhd" firstAttribute="top" secondItem="8C5-zf-rza" secondAttribute="bottom" constant="43" id="dnl-50-tfu"/>
                             <constraint firstItem="8C5-zf-rza" firstAttribute="leading" secondItem="lYs-bl-0OI" secondAttribute="leadingMargin" constant="20" id="l22-PN-XJE"/>
-                            <constraint firstItem="cBA-C6-nhz" firstAttribute="top" secondItem="dJv-5U-2pc" secondAttribute="bottom" constant="8" id="oeH-gv-WAM"/>
+                            <constraint firstItem="cBA-C6-nhz" firstAttribute="top" secondItem="dJv-5U-2pc" secondAttribute="bottom" constant="-2" id="oeH-gv-WAM"/>
                             <constraint firstItem="X1j-Rr-Vhd" firstAttribute="top" secondItem="2o1-6A-YDC" secondAttribute="bottom" id="s6W-Yg-UbE"/>
                             <constraint firstItem="aEY-yf-X0Z" firstAttribute="top" secondItem="9I7-X6-Tgl" secondAttribute="bottom" constant="42" id="vrY-ow-dum"/>
                         </constraints>
