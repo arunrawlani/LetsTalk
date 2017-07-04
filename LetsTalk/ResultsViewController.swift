@@ -41,7 +41,7 @@ class ResultsViewController: UIViewController{
             print("Result: \(response.result)")                         // response serialization result
             
             if let json = response.result.value {
-                //print("JSON: \(json)") // serialized json response
+                print("JSON: \(json)") // serialized json response
                 let myJSON = JSON(json)
                 let duration = myJSON["duration"].intValue
                 self.durationString = String(duration)+"s"
@@ -60,9 +60,9 @@ class ResultsViewController: UIViewController{
             print(self.pauseString)
             print(self.scoreString)
             
-            self.timeLabel.text = "Loading..."
-            self.pauseLabel.text = "Loading..."
-            self.probLabel.text = " "
+            self.timeLabel.text = "..."
+            self.pauseLabel.text = "..."
+            self.probLabel.text = "..."
             
             self.delay(seconds: 2.0, completion: {
                 self.timeLabel.text = self.durationString

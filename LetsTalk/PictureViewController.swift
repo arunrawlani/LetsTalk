@@ -84,7 +84,7 @@ class PictureViewController: UIViewController, AVAudioRecorderDelegate, AVAudioP
     }
     
     @IBAction func nextPicture(_ sender: Any) {
-        if(count >= 0){
+        if(count >= 4){
             //SwiftSpinner.show(duration: 3.0, title:"Aggregating score for the images")
             //SwiftSpinner.show(duration: 3.0, title: "Analyzing all recordings")
             //SwiftSpinner.show(duration: 2.0, title: "Running data through SVM")

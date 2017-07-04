@@ -19,7 +19,7 @@ class LoginViewController: UIViewController{
     }
     
     @IBAction func loginPressed(_ sender: Any) {
-        let when = DispatchTime.now() + 2
+        let when = DispatchTime.now() + 4
         self.aIndi.isHidden = false;
         
         //method to produce delay and show Activity Indicator

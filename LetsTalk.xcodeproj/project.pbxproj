@@ -22,6 +22,8 @@
 		F188F4A41EF6611A007DC20B /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188F4A31EF6611A007DC20B /* OptionViewController.swift */; };
 		F188F4A61EF6B381007DC20B /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188F4A51EF6B381007DC20B /* ResultsViewController.swift */; };
 		F188F4A81EF6C5B7007DC20B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188F4A71EF6C5B7007DC20B /* Session.swift */; };
+		F188F4AA1EF6EB2C007DC20B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188F4A91EF6EB2C007DC20B /* DashboardViewController.swift */; };
+		F188F4AC1EF6F350007DC20B /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188F4AB1EF6F350007DC20B /* DashboardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		F188F4A31EF6611A007DC20B /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
 		F188F4A51EF6B381007DC20B /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		F188F4A71EF6C5B7007DC20B /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		F188F4A91EF6EB2C007DC20B /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		F188F4AB1EF6F350007DC20B /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,12 +146,14 @@
 				F188F4A31EF6611A007DC20B /* OptionViewController.swift */,
 				F188F4A51EF6B381007DC20B /* ResultsViewController.swift */,
 				F1737E3A1EF47F2A00B03B77 /* Main.storyboard */,
+				F188F4AB1EF6F350007DC20B /* DashboardTableViewCell.swift */,
 				F1737E3D1EF47F2A00B03B77 /* Assets.xcassets */,
 				F1737E3F1EF47F2A00B03B77 /* LaunchScreen.storyboard */,
 				F1737E421EF47F2A00B03B77 /* Info.plist */,
 				F184E6931EF5C65700D2825E /* PictureViewController.swift */,
 				F188F49F1EF62F65007DC20B /* WelcomeViewController.swift */,
 				F188F4A71EF6C5B7007DC20B /* Session.swift */,
+				F188F4A91EF6EB2C007DC20B /* DashboardViewController.swift */,
 			);
 			path = LetsTalk;
 			sourceTree = "<group>";
@@ -357,7 +363,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F188F4AC1EF6F350007DC20B /* DashboardTableViewCell.swift in Sources */,
 				F1737E651EF4ABCF00B03B77 /* LoginViewController.swift in Sources */,
+				F188F4AA1EF6EB2C007DC20B /* DashboardViewController.swift in Sources */,
 				F188F4A01EF62F65007DC20B /* WelcomeViewController.swift in Sources */,
 				F184E6941EF5C65700D2825E /* PictureViewController.swift in Sources */,
 				F188F4A61EF6B381007DC20B /* ResultsViewController.swift in Sources */,

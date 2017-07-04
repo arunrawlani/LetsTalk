@@ -9,5 +9,11 @@
 import Foundation
 
 class Session{
+    var percentage: String?
+    var status: String?
     
+    init(percentage: String, status: String){
+        self.percentage = percentage
+        self.status = status
+    }
 }

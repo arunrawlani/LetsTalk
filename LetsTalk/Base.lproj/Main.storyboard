@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JtB-SR-3eY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -102,19 +102,19 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="238" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6b3-DC-dEK">
                                                 <rect key="frame" x="0.0" y="40" width="238" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KJE-4U-2rq">
                                                 <rect key="frame" x="0.0" y="80" width="238" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -191,18 +191,18 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="238" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aVh-Nb-Kda">
                                                 <rect key="frame" x="0.0" y="48" width="238" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2j-sX-nOS">
-                                        <rect key="frame" x="40" y="276" width="208" height="50"/>
+                                        <rect key="frame" x="40" y="246" width="208" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="dvC-gG-sSj"/>
                                         </constraints>
@@ -226,7 +226,7 @@
                                     <constraint firstItem="g6m-Fr-mby" firstAttribute="centerX" secondItem="wcg-se-kaH" secondAttribute="centerX" id="cbB-Za-LMB"/>
                                     <constraint firstAttribute="trailing" secondItem="fel-3Y-9q6" secondAttribute="trailing" constant="25" id="eqW-cK-IBN"/>
                                     <constraint firstItem="g6m-Fr-mby" firstAttribute="centerY" secondItem="wcg-se-kaH" secondAttribute="centerY" constant="-40" id="fOd-xc-5Oz"/>
-                                    <constraint firstItem="b2j-sX-nOS" firstAttribute="top" secondItem="fel-3Y-9q6" secondAttribute="bottom" constant="140" id="oQj-JZ-55d"/>
+                                    <constraint firstItem="b2j-sX-nOS" firstAttribute="top" secondItem="fel-3Y-9q6" secondAttribute="bottom" constant="110" id="oQj-JZ-55d"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -259,10 +259,10 @@
             </objects>
             <point key="canvasLocation" x="1767.2" y="-276.61169415292358"/>
         </scene>
-        <!--View Controller-->
+        <!--Dashboard View Controller-->
         <scene sceneID="Ndx-1C-ecA">
             <objects>
-                <viewController id="dI8-MK-eBZ" sceneMemberID="viewController">
+                <viewController id="dI8-MK-eBZ" customClass="DashboardViewController" customModule="LetsTalk" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eKw-SR-g2O"/>
                         <viewControllerLayoutGuide type="bottom" id="cEG-O6-BbP"/>
@@ -280,23 +280,79 @@
                                     <constraint firstAttribute="height" constant="152" id="Jod-Ur-UtQ"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWF-tL-My4">
+                                <rect key="frame" x="56" y="224" width="208" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="71" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wf0-Gb-Ldw">
+                                <rect key="frame" x="0.0" y="256" width="320" height="263"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DashboardCell" textLabel="tAt-CP-Smi" detailTextLabel="E1m-qg-0Ji" style="IBUITableViewCellStyleValue1" id="Wfj-DK-1i2" customClass="DashboardTableViewCell" customModule="LetsTalk" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="71"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wfj-DK-1i2" id="58L-MD-T7V">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="70.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tAt-CP-Smi">
+                                                    <rect key="frame" x="15" y="26" width="27.5" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="0.14166144091767952" blue="0.26689199003070374" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="E1m-qg-0Ji">
+                                                    <rect key="frame" x="266" y="26" width="39" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="0.82088514397905754" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="percentage" destination="E1m-qg-0Ji" id="BJc-AM-8Aq"/>
+                                            <outlet property="sessionName" destination="tAt-CP-Smi" id="vMQ-43-1Kw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="dI8-MK-eBZ" id="rli-dE-7ah"/>
+                                    <outlet property="delegate" destination="dI8-MK-eBZ" id="Uns-jh-Mpr"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wf0-Gb-Ldw" secondAttribute="trailing" id="1V1-5l-3A7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kWF-tL-My4" secondAttribute="trailing" constant="40" id="52D-NZ-Wqd"/>
                             <constraint firstItem="bcd-1T-zY2" firstAttribute="leading" secondItem="9rw-vG-Oj2" secondAttribute="leading" id="Eso-T5-Jm3"/>
                             <constraint firstItem="bcd-1T-zY2" firstAttribute="top" secondItem="eKw-SR-g2O" secondAttribute="bottom" id="MkS-T5-V7q"/>
                             <constraint firstItem="xva-so-uYG" firstAttribute="leading" secondItem="9rw-vG-Oj2" secondAttribute="leading" id="SBR-F9-Q5r"/>
+                            <constraint firstItem="kWF-tL-My4" firstAttribute="top" secondItem="bcd-1T-zY2" secondAttribute="bottom" constant="8" id="X6s-55-fVw"/>
+                            <constraint firstItem="wf0-Gb-Ldw" firstAttribute="leading" secondItem="9rw-vG-Oj2" secondAttribute="leading" id="XvS-u6-wcF"/>
+                            <constraint firstItem="wf0-Gb-Ldw" firstAttribute="top" secondItem="kWF-tL-My4" secondAttribute="bottom" constant="10" id="aHb-ci-O1k"/>
+                            <constraint firstItem="cEG-O6-BbP" firstAttribute="top" secondItem="wf0-Gb-Ldw" secondAttribute="bottom" id="aLC-6A-dw5"/>
                             <constraint firstAttribute="trailing" secondItem="bcd-1T-zY2" secondAttribute="trailing" id="dbU-rx-mOe"/>
                             <constraint firstItem="xva-so-uYG" firstAttribute="top" secondItem="eKw-SR-g2O" secondAttribute="bottom" id="m7b-io-w7X"/>
                             <constraint firstItem="cEG-O6-BbP" firstAttribute="top" secondItem="xva-so-uYG" secondAttribute="bottom" id="uRf-lV-Epl"/>
+                            <constraint firstItem="kWF-tL-My4" firstAttribute="leading" secondItem="9rw-vG-Oj2" secondAttribute="leadingMargin" constant="40" id="z9U-RA-nWl"/>
                             <constraint firstAttribute="trailing" secondItem="xva-so-uYG" secondAttribute="trailing" id="zjw-Ne-i3R"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Jtn-zw-Y2A"/>
+                    <connections>
+                        <outlet property="numOfSessionsLabel" destination="kWF-tL-My4" id="pab-bg-KFE"/>
+                        <outlet property="tableView" destination="wf0-Gb-Ldw" id="rNH-sh-Nmp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iji-5j-rT1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4388" y="51.724137931034484"/>
+            <point key="canvasLocation" x="4387.5" y="50.70422535211268"/>
         </scene>
         <!--LetsTalk-->
         <scene sceneID="auI-xt-3xg">
@@ -901,7 +957,7 @@
         <image name="appBackground" width="374" height="667"/>
         <image name="appLogo" width="289" height="109"/>
         <image name="customButton" width="228" height="40"/>
-        <image name="dPic" width="122" height="126"/>
+        <image name="dPic" width="122" height="142"/>
         <image name="dashboardIcon" width="24" height="24"/>
         <image name="gameIcon" width="199" height="151"/>
         <image name="heart" width="220" height="220"/>
